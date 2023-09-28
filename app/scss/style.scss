@@ -1,0 +1,11 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header__up {
+   height: 100px;
+   color: $black;
+   display: flex;
+}
