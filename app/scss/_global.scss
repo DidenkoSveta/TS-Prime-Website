@@ -4,6 +4,15 @@ body {
 	overflow-x: hidden;
 }
 
+a {
+	cursor: pointer;
+}
+
+.body {
+	color: $black;
+	@extend %text-font;
+	font-size: 16px;
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -21,6 +30,12 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 120px;
+}
+
+.link-btn {
+	padding: 14px 20px;
+	color: $white;
+	@extend %text-font;
 }
 
 
