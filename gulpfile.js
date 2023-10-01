@@ -2,11 +2,11 @@ const { src, dest, watch, parallel, series }  = require('gulp');
 
 const scss           = require('gulp-sass')(require('sass'));
 const concat         = require('gulp-concat');
-const browserSync   = require('browser-sync').create();
+const browserSync    = require('browser-sync').create();
 const uglify         = require('gulp-uglify-es').default;
 const autoprefixer   = require('gulp-autoprefixer');
 const imagemin       = require('gulp-imagemin');
-const del             = require('del');
+const del            = require('del');
 const fileinclude = require('gulp-file-include');
 
 function includeHTML() {
@@ -19,7 +19,7 @@ function includeHTML() {
     .pipe(browserSync.stream());
 }
 
-function browsersync() {
+function initBrowserSync() {
   browserSync.init({
     server : {
       baseDir: ['dist'],
@@ -52,7 +52,6 @@ function images() {
 
 function scripts() {
   return src([
-    'node_modules/jquery/dist/jquery.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
@@ -94,13 +93,13 @@ function watching() {
 
 exports.styles = styles;
 exports.watching = watching;
-exports.browsersync = browsersync;
+exports.initBrowserSync = initBrowserSync;
 exports.scripts = scripts;
 exports.images = images;
 exports.cleanDist = cleanDist;
 
 
 exports.build = series(cleanDist, images, includeHTML, build);
-exports.default = parallel(styles ,scripts ,browsersync, watching);
+exports.default = parallel(styles ,scripts ,initBrowserSync, watching);
 
 

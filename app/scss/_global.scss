@@ -1,6 +1,6 @@
 html,
 body {
-	height: 100%;
+	height: 100vh;
 	overflow-x: hidden;
 }
 
@@ -8,7 +8,7 @@ a {
 	cursor: pointer;
 }
 
-.body {
+body {
 	color: $black;
 	@extend %text-font;
 	font-size: 16px;
@@ -16,17 +16,25 @@ a {
 .wrapper {
 	display: flex;
 	flex-direction: column;
-	min-height: 100%;
+	justify-content: space-between;
+	min-height: 100vh;
+	font-family: 'Montserrat';
 }
 
 .main {
 	flex: 1 0 auto;
 }
-.footer {
+
+footer {
+	background: $black;
 	flex: 0 0 auto;
+	color: $white;
+	a {
+		color: $white;
+	}
 }
 
-.container{
+.container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 120px;
@@ -35,10 +43,14 @@ a {
 .link-btn {
 	padding: 14px 20px;
 	color: $white;
-	@extend %text-font;
+	position: relative;
+	@extend %title-font;
+	font-size: 14px;
 }
 
-
-
+.burger, 
+.close  {
+	display: none;
+}
 
 
