@@ -216,7 +216,7 @@
    }
    &-text {
       width: 100%;
-      height: 50%;
+      height: 60%;
       display: flex;
       padding: 40px 20px;
       align-items: center;
@@ -254,6 +254,11 @@
    }
 }
 
+.partners__block {
+   &-grid {
+      display: flex;
+   }
+}
 
 
 
