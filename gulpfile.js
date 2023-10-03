@@ -48,6 +48,7 @@ function images() {
       ]
     ))
     .pipe(dest('dist/images'))
+    .pipe(browserSync.stream());
 }
 
 function scripts() {
@@ -84,11 +85,16 @@ function build() {
     .pipe(browserSync.stream());
 }
 
+function watchImages() {
+  return watch('app/images/**/*', images);
+}
+
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
   watch(['app/*.html'], includeHTML).on('change', browserSync.reload);
   watch(['app/templates-parts/**/*.html'], includeHTML);
+  watchImages();
 }
 
 exports.styles = styles;
