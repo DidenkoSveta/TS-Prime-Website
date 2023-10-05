@@ -164,12 +164,49 @@
     <div class="request__block-content">
       <h4>Изготовим детали по вашему чертежу</h4>
       <div class="request__block-text">
-        <p>Поможем воплотить в металле любую самую смелую идею, профессионально решаем <span>нетиповые и нестандартные</span> задачи</p>
-        <p>Оптимальные сроки, точное <span>соответствие</span> конечного изделия чертежу, <span>адекватные цены</span> даже при заказе одной детали</p>
+        <p>Поможем воплотить в металле любую самую смелую идею, профессионально решаем <span>нетиповые и
+            нестандартные</span> задачи</p>
+        <p>Оптимальные сроки, точное <span>соответствие</span> конечного изделия чертежу, <span>адекватные цены</span>
+          даже при заказе одной детали</p>
       </div>
       <a class="main__block-btn link-btn" href="#">Подробнее</a>
     </div>
     <img src="images/img/request.png" alt="">
+  </div>
+</section>
+
+<section class="contact__block">
+  <div class="container contact__block-container">
+    <div class="contact__block-content">
+      <p>+7 (473) 203-06-55</p>
+      <p>info@ts-prime.ru</p>
+      <p>г. Воронеж, Московский пр-т, д.26, офис 304</p>
+    </div>
+
+    <div class="contact__block-form">
+      <h3>Обратная связь</h3>
+      <p>Поделитесь мнением о нашей работе или задайте нам любой интересующий вас вопрос в поле комментарий</p>
+      <form action="action_page.php" enctype="multipart/form-data" method="post">
+
+        <div class="contact__form-grid">
+
+          <input type="text" id="contact-name" name="contactname" autocomplete="on" placeholder="Имя">
+          <label for="contact-name"></label>
+
+          <input type="text" id="contact-tel" name="contacttel" autocomplete="on" placeholder="Телефон">
+          <label for="contact-tel"></label>
+
+          <textarea id="subject" name="subject" placeholder="Комментарий"></textarea>
+          <label for="subject"></label>
+          <input class="button__contact link-btn" id="button__contact" type="submit" value="Отправить"
+            name="submitform">
+          <p>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c
+            <a href="#">политикой конфиденциальности</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    
   </div>
 </section>
 
@@ -199,5 +236,6 @@
   </div>
   <img class="quality__img" src="images/img/bg-elements/el-01.svg" alt="">
 </section>
+
 
 @@include('./templates-parts/footer.html')
