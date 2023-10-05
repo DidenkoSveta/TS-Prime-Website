@@ -255,16 +255,82 @@
 }
 
 .partners__block {
+   &-container {
+      overflow-x: hidden;      
+   }
    &-grid {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 80px;
+      animation-duration: 10s;
+      animation-name: slide-partners;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+
+   }
+   &-card {
+      height: 60px;
+      img {
+         height: 60px;
+         max-width: 290px;
+      }
+   }
+}
+@keyframes slide-partners {
+   0% {
+      transform: translateX(60px);
+    }
+    100% {
+      transform: translateX(-660px);
+    }
+}
+
+.about__block {
+   background-image: url("../images/img/about-bg.png"); 
+   width: 100%;
+   max-height: 650px;
+   padding: 30px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+   background-position: center center;   
+   &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+      color: $white;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 36px; 
    }
 }
 
+.additional__block {
+   background: #E6E6E6;
+   &-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+   }
+   &-card {
+      display: flex;
+      align-items: center;
+      width: 500px;
+      gap: 15px;
+      p {
+         font-size: 18px;
+         font-style: normal;
+         font-weight: 600;
+         line-height: 27px;
+         letter-spacing: 0.36px;
+         word-wrap: break-word;
+      }
 
-
-
-
-
+   }
+}
 
 
 
