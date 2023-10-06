@@ -394,6 +394,8 @@
 .quality__block {
    background: #F5F5F5;
    position: relative;
+   margin-bottom: 0;
+   padding-bottom: 40px;
    &-grid {
       display: flex;
       justify-content: space-between;
@@ -432,19 +434,134 @@
 .contact__block-container {
    display: flex;
    align-items: center;
+   justify-content: space-around;
 }
 
 .contact__block-form {
    display: flex;
+   background: #fff;
    flex-direction: column;
    align-items: flex-start;
+   gap: 30px;
+   h3 {
+      margin-bottom: 10px;
+   }
 }
 
 .contact__form-grid {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
+   gap: 8px;
 }
+
+.contact__block {
+   position: relative;
+   &-form {
+      z-index: 1;
+      width: 600px;
+      padding: 50px 50px 60px;
+      border-radius: 10px;
+      border: 1px solid rgba(222, 92, 40, 0.50);
+      background: #FFF;
+      box-shadow: -2px -2px 8px 0px rgba(222, 92, 40, 0.20), 4px 4px 10px 0px rgba(222, 92, 40, 0.15);
+   }
+   &-subtitle {
+      color: $orange;
+      font-weight: 400;
+   }
+   &-policy {
+      font-weight: 300;
+      font-size: 14px;
+      padding-top: 10px;
+      a {
+         color: $orange;
+         font-weight: 400;
+      }
+   }
+   &-img {
+      position: absolute;
+      left: -6%;
+      z-index: 0;
+   }
+}
+
+.contact__block-content {
+   max-width: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   gap: 25px;
+   p:nth-child(1) {
+      color: $black;
+      font-family: Montserrat;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+   }
+   p:nth-child(2) {
+      color: $orange;
+      font-family: Montserrat;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: 1.6px;
+   }
+   p:nth-child(3) {
+      color: $black;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: 1px;
+   }
+}
+
+.contacts__block {
+   &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      max-width: 380px;
+      font-size: 18px;
+      font-weight: 500;
+   }
+   &-title {
+      color: $black;
+      font-weight: 700;
+   }
+   &-subtitle {
+      font-weight: 400;
+      font-size: 20px;
+      margin-bottom: 40px;
+   }
+}
+
+.contacts__block-inner {
+   max-width: 380px;
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+   span {
+      color: $orange;
+   }
+}
+
+.contacts__block-inner>div>p {
+   line-height: 140%;
+}
+
+
+
+
+
+
+
+
+
 
 
 

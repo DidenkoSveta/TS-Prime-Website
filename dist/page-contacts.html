@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/icon/favicon.png">
+  <title>TS-Prime</title>
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container header__up-container">
+        <div class="header__up">
+          <a class="header__up-logo" href="#"><img src="images/icons/logo.png" alt="logo"></a>
+          <div class="header__up-contacts">
+            <div class="header__up-phone">
+              <a class="header__up-link" href="#">
+                +7 (473) 203-06-55</a>
+              <p class="header__up-time">Часы работы: 8:00-19:00</p>
+            </div>
+            <a class="header__up-button link-btn" href="#">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="header__block">
+        <div class="header__block-menu">
+          <button class="burger header__burger" type="button"></button>
+          <nav class="navigation__header">
+            <button class="close header__close" type="button"></button>
+            <ul class="header__block-lists navigation__menu">
+              <li><a class="header__block-link" href="#">главная</a>
+              </li>
+              <li><a class="header__block-link" href="#">о нас</a></li>
+              <li class="header__block-taplink"><a class="header__block-link" href="#">оборудование</a>
+                <!-- <ul class="header__block-underlists">
+                  <li class="header__block-underlist"><a href="#">Молочное и масложировое
+                      производство</a>
+                  </li>
+                  <li class="header__block-underlist"><a href="#">Птицеперерабатывающее производство,
+                      агрокомплексы</a></li>
+                  <li class="header__block-underlist"><a href="#">Мясоперерабатывающее производство</a>
+                  </li>
+                  <li class="header__block-underlist"><a href="#">Пивобезалкогольное, винно-водочное
+                      производство</a></li>
+                  <li class="header__block-underlist"><a href="#">Рыбоперерабатывающее производство</a>
+                  </li>
+                  <li class="header__block-underlist"><a href="#">Хлебопекарное и кондитерское
+                      производство</a>
+                  </li>
+                </ul> -->
+              </li>
+              <li class="header__block-taplink"><a class="header__block-link" href="#">услуги</a>
+                <!-- <ul class="header__block-underlists">
+                  <li class="header__block-underlist"><a href="#">Каталог</a></li>
+                  <li class="header__block-underlist"><a href="#">Моющие средства ДонАцид</a></li>
+                  <li class="header__block-underlist"><a href="#">Моющие средства ЭКО</a></li>
+                  <li class="header__block-underlist"><a href="#">Техническая химия</a></li>
+                  <li class="header__block-underlist"><a href="#">Оснащение лабораторий</a></li>
+                </ul> -->
+              </li>
+              <li><a href="#">преимущества</a></li>
+              <li><a href="page-contacts.html">контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+  </header>
+
+<section class="contact__block">
+   <img class="contact__block-img" src="images/img/form-bg.png" alt="">
+   <div class="container contact__block-container">
+      <div class="contacts__block-content">
+         <h1 class="contacts__block-title">Контакты</h1>
+         <p class="contacts__block-subtitle">Связаться с нами Вы можете любым удобным для Вас способом.</p>
+         <div class="contacts__block-inner">
+            <div>
+               <h5>Контактный телефон</h5>
+               <p><span>+7 (473) 203-06-55</span></p>
+            </div>
+
+            <div>
+               <h5>Email</h5>
+               <p><span>info@ts-prime.ru</span></p>
+            </div>
+
+            <div>
+               <h5>Адрес</h5>
+               <p>394026 г. Воронеж, Московский пр-т, д.26, офис 304</p>
+            </div>
+
+            <div>
+               <h5>График работы</h5>
+               <p>С 8:00 до 19:00 <br>
+                  СБ-ВС выходные</p>
+            </div>
+         </div>
+      </div>
+      <div class="contact__block-form">
+         <h3>Обратная связь</h3>
+         <p class="contact__block-subtitle">Поделитесь мнением о нашей работе или задайте нам любой интересующий вас
+            вопрос в поле комментарий</p>
+         <form action="action_page.php" enctype="multipart/form-data" method="post">
+
+            <div class="contact__form-grid">
+
+               <input type="text" id="contact-name" name="contactname" autocomplete="on" placeholder="Имя">
+               <label for="contact-name"></label>
+
+               <input type="text" id="contact-tel" name="contacttel" autocomplete="on" placeholder="Телефон">
+               <label for="contact-tel"></label>
+
+               <textarea id="subject" name="subject" placeholder="Комментарий"></textarea>
+               <label for="subject"></label>
+               <input class="button__contact link-btn" id="button__contact" type="submit" value="Отправить"
+                  name="submitform">
+               <p class="contact__block-policy">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+                  соглашаетесь c
+                  <a href="#">политикой конфиденциальности</a>
+               </p>
+            </div>
+         </form>
+      </div>
+
+   </div>
+</section>
+
+
+
+<footer>
+   <div class="footer__block">
+      <!-- <a href="#" id="toTop"><img src="assets/svg/up-arrow.svg" alt="toTop"></a> -->
+      <div class="footer__block-row" id="footer-logo">
+         <a class="footer__block-logo" href="#"><img src="images/icons/logo-footer.png" alt="logo"></a>
+      </div>
+      <div id="footer-navigation" class="footer__block-row">
+         <ul>
+            <li class="footer__block-text">информация</li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Наши услуги</a></li>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="page-contacts.html">Контакты</a></li>
+         </ul>
+      </div>
+      <div id="footer-services" class="footer__block-row">
+         <ul>
+            <li class="footer__block-text">услуги</li>
+            <li><a href="#">Сервисное обслуживание станков</a></li>
+            <li><a href="#">Технологическое сопровождение</a></li>
+         </ul>
+      </div>
+      <div id="footer-tech" class="footer__block-row">
+         <ul>
+            <li class="footer__block-text">оборудование</li>
+            <li><a href="#">Металлобрабатывающие станки</a></li>
+            <li><a href="#">Запчасти для станков</a></li>
+            <li><a href="#">Станочная оснастка</a></li>   
+         </ul>
+      </div>
+      <noindex>
+         <div id="footer-contacts" class="footer__block-row">
+            <ul>
+               <li class="footer__block-text">контакты</li>
+               <li><a href="#" rel="nofollow">г. Воронеж, Московский проспект, д. 26, оф. 304</a></li>
+               <li><a href="#" rel="nofollow">+7 (473) 203-06-55</a></li>
+               <li>пн - пт  09:00 - 18:00 <br>
+                  сб и вс Выходной</li>
+               <li><a href="#" rel="nofollow">info@ts-prime.ru</a></li>
+            </ul>
+         </div>
+      </noindex>
+   </div>
+   <hr color="#827474">
+   <div class="footer__block-copyright">
+         <p>&copy; 2023 ts-prime.ru Все права защищены </p>
+         <a href="#" class="confederacy">Политика конфиденциальности</a>
+         <noindex>
+            <p>Разработка сайта: <a href="#" rel="nofollow" class="made"> WebPerspective</a></p>
+         </noindex>
+   </div>
+</footer>
+</div>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
