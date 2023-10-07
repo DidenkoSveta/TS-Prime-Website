@@ -483,6 +483,7 @@
       position: absolute;
       left: -6%;
       z-index: 0;
+      opacity: 0.5;
    }
 }
 
@@ -528,6 +529,7 @@
       max-width: 380px;
       font-size: 18px;
       font-weight: 500;
+      z-index: 1;
    }
    &-title {
       color: $black;
@@ -554,14 +556,131 @@
    line-height: 140%;
 }
 
+.map__block {
+   &-container {
+      z-index: 1;
+      padding: 60px 0px 0;
+   }
+}
 
+#page__title {
+   background-image: url("../images/img/title-bg.png"); 
+   width: 100%;
+   height: 176px;
+	background-size: cover;
+	background-repeat: no-repeat;
+   background-position: center center;
+}
 
+.page__title {
+   width: 1440px;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   margin: 0 auto;
+   padding: 0 120px;
+}
 
+.about__page {
+   font-weight: 400;
+   &-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+   }
+   h2 {
+      color: $orange;
+      font-weight: 600;
+      text-transform: uppercase;
+   }
+   h6 {
+      color: $orange;
+      font-weight: 600;
+      text-transform: uppercase;
+   }
+   h5 {
+      text-align: center;
+      font-size: 18px;
+      max-width: 990px;
+      margin-top: 60px;
+   }
+   span {
+      font-weight: 400;
+   }
+   &-main {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+   }
+   &-text {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+   }
+   &-left, &-right {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+   }
+   ol {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+   }
+   li {
+      list-style-type: decimal;
+      list-style-position: inside;  
+      font-weight: 600;
+   }
 
+}
 
+.benefits__block {
+   &-grid {
+      display: flex;
+      flex-direction: column;
+   }
+   &-card {
+      width: 550px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-weight: 400;
+   }
+   &-num {
+      font-family: "Verdana";
+      font-size: 100px;
+      color: #fff;
+      font-weight: 600;
+      line-height: 100%; 
+      -webkit-text-stroke: 0.1px $orange; 
+      text-stroke: 0.1px $orange; 
+      opacity: 0.9;
+   }
+   &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
+   h5 {
+      text-align: center;
+      font-size: 18px;
+      max-width: 990px;
+      margin: 0 auto;
+      margin-top: 100px;
+   }
+   h6 {
+      color: $orange;
+      font-weight: 600;
+   }
+}
 
-
-
+.benefits__block-card:nth-child(2n) {
+   position: relative;
+   top: 0px;
+   left: 600px;
+}
 
 
 

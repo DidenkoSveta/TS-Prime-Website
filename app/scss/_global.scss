@@ -34,6 +34,7 @@ footer {
 	background: $black;
 	flex: 0 0 auto;
 	color: $white;
+	z-index: 1;
 	a {
 		color: $white;
 	}
