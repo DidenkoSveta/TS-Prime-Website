@@ -1,0 +1,68 @@
+@@include('./templates-parts/header.html')
+
+<section class="contact__block">
+   <img class="contact__block-img" src="images/img/form-bg.png" alt="">
+   <div class="container contact__block-container" id="contacts__block-container">
+      <div class="contacts__block-content">
+         <h1 class="contacts__block-title">Контакты</h1>
+         <p class="contacts__block-subtitle">Связаться с нами Вы можете любым удобным для Вас способом.</p>
+         <div class="contacts__block-inner">
+            <div>
+               <h5>Контактный телефон</h5>
+               <p><span>+7 (473) 203-06-55</span></p>
+            </div>
+
+            <div>
+               <h5>Email</h5>
+               <p><span>info@ts-prime.ru</span></p>
+            </div>
+
+            <div>
+               <h5>Адрес</h5>
+               <p>394026 г. Воронеж, Московский пр-т, д.26, офис 304</p>
+            </div>
+
+            <div>
+               <h5>График работы</h5>
+               <p>С 8:00 до 19:00 <br>
+                  СБ-ВС выходные</p>
+            </div>
+         </div>
+      </div>
+      <div class="contact__block-form">
+         <h3>Обратная связь</h3>
+         <p class="contact__block-subtitle">Поделитесь мнением о нашей работе или задайте нам любой интересующий вас
+            вопрос в поле комментарий</p>
+         <form action="action_page.php" enctype="multipart/form-data" method="post">
+
+            <div class="contact__form-grid">
+
+               <input type="text" id="contact-name" name="contactname" autocomplete="on" placeholder="Имя">
+               <label for="contact-name"></label>
+
+               <input type="text" id="contact-tel" name="contacttel" autocomplete="on" placeholder="Телефон">
+               <label for="contact-tel"></label>
+
+               <textarea id="subject" name="subject" placeholder="Комментарий"></textarea>
+               <label for="subject"></label>
+               <input class="button__contact link-btn" id="button__contact" type="submit" value="Отправить"
+                  name="submitform">
+               <p class="contact__block-policy">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+                  соглашаетесь c
+                  <a href="#">политикой конфиденциальности</a>
+               </p>
+            </div>
+         </form>
+      </div>
+
+   </div>
+</section>
+
+<div class="map__block">
+   <div class="container map__block-container">
+      <img src="images/img/map.png" alt="">
+   </div>
+</div>
+
+
+@@include('./templates-parts/footer.html')
